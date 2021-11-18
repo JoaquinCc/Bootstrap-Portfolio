@@ -2,7 +2,7 @@
 // 1.Patron de colores
 ////////////////////////////////////
 
-$principal:#dc273c;
+$principal:#0d47a1;
 $secundario:#293549;
 $texto:#494949;
 
@@ -14,8 +14,45 @@ $primary:$principal;
 $secundary:$secundario;
 $body-color: $texto;
 $font-size-root:0.9rem;
+$enable-negative-margins: true;
 
+// componente navbar
 
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-focus-width: 0;
+$navbar-dark-color: #fff;
+$navbar-dark-hover-color: $principal;
+$navbar-dark-active-color:$principal;
 
+// componente button
+
+$btn-border-radius: .2rem;
+$btn-padding-y: .7rem;
+$btn-padding-x: 2.4rem;
 @import "../libs/bootstrap/scss/bootstrap.scss";
 
+// .row>*{
+// 	border: 1px solid red;
+// }
+
+////////////////////////////////////
+// 3. Estilos generales 
+////////////////////////////////////
+@include media-breakpoint-up(lg){
+
+	:root{
+		font-size: 1rem;
+	}
+
+}
+
+////////////////////////////////////
+//4 . estilo de encabezado
+////////////////////////////////////
+
+.encabezado{
+
+	background: url("../images/Simple\ Shiny.svg") center center /cover fixed;
+
+}
